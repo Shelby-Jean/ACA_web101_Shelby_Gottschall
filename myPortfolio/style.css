@@ -2,9 +2,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(./pexels-photo-574070.jpeg);
   background-repeat: no-repeat;
-  background-size: 1600px 1000px;
-  width: 100vw;
-  height: 100vh;
+  background-size: cover;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 .logo {
@@ -46,6 +46,11 @@ nav > a {
   background-color: white;
   padding: 20px; 
 } */
+
+nav a:hover {
+  color: white;
+  background-color: #0795C3;
+}
 
 nav {
   display: flex;
@@ -97,4 +102,9 @@ button {
   color: white;
   letter-spacing: 16px;
   font-style: italic;
+}
+
+button:hover {
+  background-color: white;
+  color: #0795C3;
 }
