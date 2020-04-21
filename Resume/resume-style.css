@@ -1,0 +1,92 @@
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 58px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 100;
+  border-bottom: #3A41E5 solid 3px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+h4 {
+  margin: 15px 0;
+}
+
+p, ul {
+  font-weight: 100;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.category-title {
+  font-size: 24px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.no-bullets {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 1fr;
+}
+
+.image-wrapper {
+  grid-area: 1 / 1 / 2 /2;
+  max-height: 538px;
+  /* background-image: url(./bw-headshot.JPG);
+  background-size: cover; */
+} 
+
+.headshot {
+  max-width: 100%;
+}
+
+.contact-references {
+  background-color: #3A41E5;
+  color: #fff;
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.personal-history-container {
+  background-color: #ECECEC;
+  color: #3A41E5;
+  grid-area: 1 / 2 / 3 / 3; 
+  padding: 40px;
+}
+
+.summary-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+.work-academic {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  /* column-gap: 50px; */
+}
+
