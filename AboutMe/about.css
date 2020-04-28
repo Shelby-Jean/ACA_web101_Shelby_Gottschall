@@ -1,0 +1,151 @@
+body {
+  background-color: #E3DFDB;
+  color: #383234;
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #383234;
+  margin-right: 20px;
+}
+
+.grid-container {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "welcome"
+    "about"
+    "image"
+    "interests";
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.welcome {
+  grid-area: welcome;
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: .1em;
+  font-weight: 600;
+}
+
+.about {
+  grid-area: about;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about p {
+  margin: 0;
+  padding: 30px;
+}
+
+.image {
+  grid-area: image;
+  height: 300px;
+  background-image: url("headshot.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.interests {
+  grid-area: interests;
+}
+
+.card-header {
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-left: 30px;
+  margin: 10px 0;
+  letter-spacing: .1em;
+  font-weight: 600;
+}
+
+.interests-list {
+  list-style: none;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  background-color: #231F20;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+  header {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #logo {
+      font-size: 2.5em;
+      line-height: 1em;
+      margin: 0;
+      margin-top: 75px;
+  }
+
+  #nav-links {
+    margin-top: 75px;
+  }
+
+  #nav-links a {
+    padding-left: 25px;
+    font-weight: 500;
+  }
+ 
+  .grid-container {
+    margin: 50px 150px;
+    grid-template-areas:
+      "welcome"
+      "image"
+      "about"
+      "interests"; 
+    }
+
+  .welcome {
+    font-size: 2em;
+  }
+
+  .image {
+    height: 600px;
+  }
+
+  .card-header {
+    font-size: 1.5em;
+  }
+}
