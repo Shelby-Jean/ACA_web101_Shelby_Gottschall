@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Page</title>
+</head>
+<body>
+    <form class="submission-form" action="results.html" method="GET" enctype="multipart/form-data">
+      
+    <div>
+      <label class="titles" for="name">Name</label>
+      <input type="text" name="name" id="name">
+    </div>
+
+    <div>
+      <label class="titles" for="email">Email</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div>
+      <label class="titles" for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone">
+    </div>
+
+    <div>
+      <label class="titles" for="comments">Please provide a short description in regards to why you're contacting me.</label>
+      <textarea id="comments" name="comments" minlength="20" maxlength="500" placeholder="comments"></textarea>
+    </div>
+
+    <div>
+      <p class="titles">How did you hear about me?</p>
+      <section>
+        <input type="checkbox" name="classmate" id="classmate">
+        <label for="classmate">Classmate</label>
+      </section>
+      <section>
+        <input type="checkbox" name="resume" id="resume">
+        <label for="resume">Resume Submission</label>
+      </section>
+      <section>
+        <input type="checkbox" name="linkedin" id="linkedin">
+        <label for="linkedin">LinkedIn</label>
+      </section>
+      <section>
+        <input type="checkbox" name="academy" id="academy">
+        <label for="academy">Code Academy Rec</label>
+      </section>
+    </div>
+
+    <div>
+      <p class="titles">Would you like me to follow up?</p>
+      <section>
+        <input type="radio" name="contact" id="yes" value="yes">
+        <label for="yes">Yes</label>
+      </section>
+      <section>
+        <input type="radio" name="contact" id="no" value="no">
+        <label for="no">No</label>
+      </section>
+    </div>
+
+    <div>
+      <label class="titles" for="date">Please enter your birthday if you'd like to receive a special wish from me!</label>
+      <input type="date" name="date" id="date" min="2019-06-10">
+    </div>
+
+    <div class="center">
+      <button id="send-btn">Send</button>
+    </div>
+
+  </form>
+</body>
+<script src="scripts.js"></script>
+</html>
