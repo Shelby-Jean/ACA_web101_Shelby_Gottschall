@@ -2,22 +2,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-  <link rel="stylesheet" href="./resume-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./resume-style.css">
+  <script src="resume-interactive.js"></script>
   <title>Shelby Gottschall Resume</title>
 </head>
 <body>
   <main>
     <div class="container">
       <section class="image-wrapper">
-        <img src="./bw-headshot.JPG" class="headshot" alt="headshot">
+        <img src="./bw-headshot.JPG" class="headshot" alt="headshot" onmouseover="disappear(this)">
       </section>
 
       <section class="contact-references">
         <article>
           <h3 class="category-title">Contact Details</h3>
           <ul class="no-bullets">
-            <li>123-456-7890</li>
+            <li class="contact-phone" onclick="appear(this)">123-456-7890</li>
             <li>EmailAddress@gmail.com</li>
             <li>MyPortfolioWebsite.com</li>
           </ul>
@@ -42,7 +44,7 @@
 
       <section class="personal-history-container">
         <article>
-          <h1>Shelby Gottschall</h1>
+          <h1 id="animated-name" onclick="fade(this)">Shelby Gottschall</h1>
           <h2 class="uppercase">Web Developer</h2>
         </article>
 
@@ -66,7 +68,7 @@
         </article>
 
         <article>
-          <h3 class="category-title">Work History</h3>
+          <h3 class="category-title" onclick="appear(this)">Work History</h3>
           <section class="work-academic">
             <div>
               <h4 class="uppercase">Job Title One</h4>

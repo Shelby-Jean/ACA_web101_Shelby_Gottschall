@@ -52,13 +52,11 @@ p, ul {
 
 .image-wrapper {
   grid-area: 1 / 1 / 2 /2;
-  max-height: 538px;
-  /* background-image: url(./bw-headshot.JPG);
-  background-size: cover; */
+  background-color: #3A41E5;
 } 
 
 .headshot {
-  max-width: 100%;
+  width: 100%;
 }
 
 .contact-references {
@@ -69,6 +67,10 @@ p, ul {
   display: grid;
   justify-items: center;
   align-items: center;
+}
+
+.contact-phone {
+  color: #3A41E5;
 }
 
 .personal-history-container {
